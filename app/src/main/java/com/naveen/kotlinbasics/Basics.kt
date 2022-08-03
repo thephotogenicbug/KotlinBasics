@@ -43,5 +43,51 @@ fun main(){
 
 //    print("First Character " + lastCharInStr)
     // String Interpolation ( String Template )
-    print("First Character $lastCharInStr and the length of myStr is ${myStr.length}")
+//    print("First Character $lastCharInStr and the length of myStr is ${myStr.length}")
+
+//    Arithmetic Operators (+, -, *, /, %)
+    var result = 5+3
+//    result *= 2
+    result = 15%4
+//    print(result)
+
+//    Comparison Operators (==, !=, <, >, <=, >=)
+      val isEqual = 5==3
+    println("IsEqual is $isEqual")
+
+    val isNotEqual = 5!=5
+//    String Interpolation
+    println("IsNotEqual is $isNotEqual")
+
+    println("is5greater3 ${5>3}")
+    println("is-5greater3 ${-5>3}")
+    println("is5LowerEqual3 ${5<=3}")
+    println("isGreaterEqual3 ${5>=3}")
+    println("isGreaterEqual5 ${5>=5}")
+
+//    Assignment Operator (+=, -=, *=, /=, %=)
+
+      var myNum = 5
+      myNum +=3
+      println("MyNum is ${myNum}")
+
+     myNum *= 4
+    println("MyNum is $myNum")
+
+    // Increment & Decrement operators (++, -- )
+     myNum++
+    println("MyNum Increment is $myNum")
+//     Increase +1 after execution
+    println("MyNum Increment is ${myNum++}")
+//     Increase +1 before execution
+    println("MyNum Increment is ${++myNum}")
+    //     Decrease -1 before execution
+    println("MyNum Decrease by ${--myNum}")
+
+
+
+
+
+
+
 }
