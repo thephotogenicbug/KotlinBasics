@@ -55,9 +55,13 @@ fun main(){
       val isEqual = 5==3
     println("IsEqual is $isEqual")
 
+    println("**************************")
+
     val isNotEqual = 5!=5
 //    String Interpolation
     println("IsNotEqual is $isNotEqual")
+
+    println("**************************")
 
     println("is5greater3 ${5>3}")
     println("is-5greater3 ${-5>3}")
@@ -65,6 +69,7 @@ fun main(){
     println("isGreaterEqual3 ${5>=3}")
     println("isGreaterEqual5 ${5>=5}")
 
+    println("**************************")
 //    Assignment Operator (+=, -=, *=, /=, %=)
 
       var myNum = 5
@@ -84,10 +89,101 @@ fun main(){
     //     Decrease -1 before execution
     println("MyNum Decrease by ${--myNum}")
 
+    println("**************************")
+
+    // If Statement
+    var heightPerson1 = 170
+    var heightPerson2 = 159
+
+    if(heightPerson1 > heightPerson2){
+        println("use raw force")
+    }else if(heightPerson1 == heightPerson2){
+        println("use your power technique 1337")
+    }else{
+        println("use technique")
+    }
+    println("**************************")
+
+   val age = 25
+
+    if(age >= 30){
+        println("your over 30")
+    }
+    println("**************************")
+
+    if(age >= 21){
+        println("now You may drink in the india")
+    } else if(age >= 18){
+        println("you may vote now")
+    } else if(age >= 16){
+        println("you may drive now")
+    } else {
+        print("Your too young")
+    }
+    println("**************************")
+
+    when(age){
+//        !in 0..20 ->  println("now You may drink in the india") if the person is less then 0 or older than 20 execute this code
+        in 21..150 ->  println("now You may drink in the india")
+        in 18..20 -> println("you may vote now")
+         16,17 ->  println("you may drive now")
+        else -> print("Your too young")
+    }
+    println("**************************")
+//     Keyword called is
+    // any type (use this to check any type)
+    var x : Any = 13.37f
+    when(x){
+        is Int -> println("$x is an Int")
+        is Double -> println("$x is an Double")
+        is String -> println("$x is an String")
+        else -> println("$x is none of the above")
+    }
+    println("**************************")
 
 
+//    if statement with string, and other datatypes
+
+    var name = "Naveen"
+
+    if(name == "Naveen"){
+        println("Welcome home Naveen")
+    } else {
+        println("Who are you ?")
+    }
+    println("**************************")
+
+    var isRainy = true
+    if(isRainy)
+        println("Its Rainy")
+
+    println("**************************")
 
 
+    // When Expression (Replacement of switch statement)
+    var season = 3
+    when(season){
+        1 -> println("Spring")
+        2 -> println("Summer")
+        3 -> {
+            println("Fall")
+            println("Autumn")
+        }
+        4 -> println("Winter")
+        else -> println("Invalid Season")
+    }
+    println("**************************")
+
+     // when expression using different approach using range of values
+    var month = 3
+    when(month){
+        in 3..5 -> println("Spring")
+        in 6..8 -> println("Summer")
+        in 9..11 -> println("Fall")
+        12, 1, 2 -> println("Winter")
+        else -> println("Invalid Season")
+
+    }
 
 
 }
