@@ -184,6 +184,56 @@ fun main(){
         else -> println("Invalid Season")
 
     }
+    println("**************************")
+
+    // While loop ( executes a block of code repeatedly as long as a given condition is true )
+    var xx = 1
+    while(xx <= 10){
+        // code to be executed
+        println("$xx")
+        xx++
+    }
+    println("\n While loop is done")
+
+    println("**************************")
+
+    var descending = 100
+    while(descending >= 0){
+        // code to be executed
+        println("$descending")
+        descending -= 2
+    }
+    println("\n While loop is done")
+
+    var Dowhile = 100
+    while(Dowhile >= 0){
+        // code to be executed
+        println("$Dowhile")
+        Dowhile -= 2
+    }
+    println("\n While loop is done")
+    println("**************************")
+
+    Dowhile = 1
+    do{
+         print("$Dowhile")
+         Dowhile++
+    }while  (Dowhile <= 10)
+    println("\n Do While loop is done")
+    println("**************************")
+
+
+    var feltTemp = "cold"
+    var roomTemp = 10
+    while(feltTemp == "cold"){
+        roomTemp++
+        if(roomTemp >= 20){
+            println("$roomTemp")
+            feltTemp = "comfy"
+            println("it's comfy now")
+        }
+    }
+
 
 
 }
