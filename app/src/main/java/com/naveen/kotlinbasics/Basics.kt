@@ -233,7 +233,40 @@ fun main(){
             println("it's comfy now")
         }
     }
+    println("**************************")
+    for(num in 1..10){
+        print("$num")
+    }
+    println("**************************")
+    for(i in 1 until 10){
+        print("$i")
+    }
 
+    println("**************************")
+    for(i in 10 downTo 1){
+        print("$i")
+    }
+    println("**************************")
+    for(i in 10 downTo 1 step 2){
+        print("$i")
+    }
+    println("**************************")
+    // Break and continue
+    for(i in 1 until 20){
+        print("$i")
+        if(i/2 == 5){
+            break
+        }
+    }
+    print("Done with the loop")
+    println("**************************")
+    for(i in 1 until 20){
+        print("$i")
+        if(i/2 == 5){
+            continue
+        }
+    }
+    print("Done with the loop")
 
 
 }
