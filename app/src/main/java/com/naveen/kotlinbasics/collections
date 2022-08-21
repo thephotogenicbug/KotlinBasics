@@ -1,0 +1,25 @@
+Collections of only the same element
+
+IntArray - Integer
+BooleanArray - Boolean
+DoubleArray - Double
+ByteArray - Byte
+LongArray - Long
+ShortArray - Short
+Float Array - Float
+
+
+
+Collections of the same or different element
+
+arrayOf<String>
+arrayOf<Fruit>
+array(1,2,"John","Doe",0.5,Fruit())
+
+Immutable Collections
+
+List - listOf
+Set - setOf
+Map - mapOf ( key connected to a value )
+
+
