@@ -21,5 +21,8 @@ Immutable Collections
 List - listOf
 Set - setOf
 Map - mapOf ( key connected to a value )
+Mutable List - ArrayList, arrayListOf,mutableListOf
+Mutable Set - mutuableSetOf,hashSetOf
+Mutable Map - HashMap,hashMapOf,mutableMapOf
 
 
